@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GARAGE DAO — Création de Devis</title>
+  <title>GARAGE DAO â€” CrÃ©ation de Devis</title>
   <style>
     /* ============================================================
        VARIABLES & RESET
@@ -250,8 +250,8 @@
     }
 
 
-    /* Supprime uniquement les petites flèches des champs numériques
-       Le champ reste numérique et le garagiste saisit toujours la valeur manuellement. */
+    /* Supprime uniquement les petites flÃ¨ches des champs numÃ©riques
+       Le champ reste numÃ©rique et le garagiste saisit toujours la valeur manuellement. */
     input[type="number"]::-webkit-outer-spin-button,
     input[type="number"]::-webkit-inner-spin-button {
       -webkit-appearance: none;
@@ -427,7 +427,7 @@
     .btn-add-ligne svg { width: 16px; height: 16px; fill: var(--blue); }
 
     /* ============================================================
-       RÉSUMÉ
+       RÃ‰SUMÃ‰
     ============================================================ */
     .resume-card {
       background: var(--navy);
@@ -619,7 +619,7 @@
     }
 
     /* ============================================================
-       RESPONSIVE — mobile first adjustments
+       RESPONSIVE â€” mobile first adjustments
     ============================================================ */
     @media (max-width: 540px) {
       .field-group { grid-template-columns: 1fr; }
@@ -655,7 +655,7 @@
     </div>
     <div class="logo-text">
       <h1>GARAGE DAO</h1>
-      <p>Création rapide de devis automobile</p>
+      <p>CrÃ©ation rapide de devis automobile</p>
     </div>
   </div>
 </header>
@@ -667,7 +667,7 @@
 
   <!-- CARTE INFO GARAGE -->
   <div class="garage-card">
-    <div class="garage-services">Mécanique générale &bull; Tôlerie &bull; Électricité &bull; Climatisation</div>
+    <div class="garage-services">MÃ©canique gÃ©nÃ©rale &bull; TÃ´lerie &bull; Ã‰lectricitÃ© &bull; Climatisation</div>
     <div class="gc-row">
       <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
       Treichville zone 3
@@ -682,7 +682,7 @@
     </div>
     <div class="gc-row">
       <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
-      N° NCC : 0717693-B
+      NÂ° NCC : 0717693-B
     </div>
   </div>
 
@@ -706,11 +706,11 @@
     </div>
   </div>
 
-  <!-- ======================== SECTION 2 : VÉHICULE ======================== -->
+  <!-- ======================== SECTION 2 : VÃ‰HICULE ======================== -->
   <div class="section-card">
     <div class="section-header">
       <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
-      Informations véhicule
+      Informations vÃ©hicule
     </div>
     <div class="section-body">
       <div class="field-group">
@@ -736,7 +736,7 @@
       <div class="field-group one-col">
         <div class="field">
           <label for="devis-objet">Description de l'intervention <span class="req">*</span></label>
-          <input type="text" id="devis-objet" placeholder="Ex : Installation de climatisation, vidange complète…" />
+          <input type="text" id="devis-objet" placeholder="Ex : Installation de climatisation, vidange complÃ¨teâ€¦" />
         </div>
       </div>
     </div>
@@ -750,22 +750,22 @@
     </div>
     <div class="section-body">
       <div class="lignes-list" id="lignes-list">
-        <!-- Les lignes sont générées dynamiquement -->
+        <!-- Les lignes sont gÃ©nÃ©rÃ©es dynamiquement -->
       </div>
 
-      <div class="total-pieces-card" aria-label="Total pièces automatique">
+      <div class="total-pieces-card" aria-label="Total piÃ¨ces automatique">
         <div class="ligne-grid">
           <div class="field ligne-designation">
-            <label>Désignation</label>
-            <div class="total-label-box">Total pièces</div>
+            <label>DÃ©signation</label>
+            <div class="total-label-box">Total piÃ¨ces</div>
           </div>
           <div class="field">
-            <label>Quantité</label>
-            <div class="empty-box">—</div>
+            <label>QuantitÃ©</label>
+            <div class="empty-box">â€”</div>
           </div>
           <div class="field">
             <label>Prix unitaire HT</label>
-            <div class="empty-box">—</div>
+            <div class="empty-box">â€”</div>
           </div>
           <div class="field">
             <label>Total HT</label>
@@ -781,40 +781,40 @@
     </div>
   </div>
 
-  <!-- ======================== SECTION 5 : MAIN-D’ŒUVRE ======================== -->
+  <!-- ======================== SECTION 5 : MAIN-Dâ€™Å’UVRE ======================== -->
   <div class="section-card">
     <div class="section-header">
       <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14H7v-2h5v2zm5-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
-      Main-d’œuvre
+      Main-dâ€™Å“uvre
     </div>
     <div class="section-body">
       <div class="field-group one-col">
         <div class="field">
-          <label for="main-oeuvre-val">Main-d’œuvre</label>
+          <label for="main-oeuvre-val">Main-dâ€™Å“uvre</label>
           <input type="number" id="main-oeuvre-val" placeholder="Ex : 120000" min="0" step="1" />
         </div>
       </div>
     </div>
   </div>
 
-  <!-- ======================== RÉSUMÉ ======================== -->
+  <!-- ======================== RÃ‰SUMÃ‰ ======================== -->
   <div class="resume-card">
     <div class="resume-title">
       <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14H7v-2h5v2zm5-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
-      Résumé du devis
+      RÃ©sumÃ© du devis
     </div>
     <div class="resume-rows">
       <div class="resume-row">
-        <span class="label-r"><span class="dot dot-piece"></span> Total pièces</span>
+        <span class="label-r"><span class="dot dot-piece"></span> Total piÃ¨ces</span>
         <span id="r-pieces">0 FCFA</span>
       </div>
       <div class="resume-row">
-        <span class="label-r"><span class="dot dot-mo"></span> Main-d’œuvre</span>
+        <span class="label-r"><span class="dot dot-mo"></span> Main-dâ€™Å“uvre</span>
         <span id="r-mo">0 FCFA</span>
       </div>
       <hr class="resume-sep" />
       <div class="resume-total">
-        <span class="t-label">Net à payer</span>
+        <span class="t-label">Net Ã  payer</span>
         <span class="t-amount" id="r-total">0 FCFA</span>
       </div>
     </div>
@@ -823,59 +823,60 @@
   <!-- ======================== MESSAGES ======================== -->
   <div class="msg msg-info" id="msg-sending">
     <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-    <span>Génération en cours… Veuillez patienter.</span>
+    <span>GÃ©nÃ©ration en coursâ€¦ Veuillez patienter.</span>
   </div>
 
   <div class="msg msg-success" id="msg-success">
     <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14l-4-4 1.41-1.41L10 13.17l6.59-6.59L18 8l-8 8z"/></svg>
-    <span id="msg-success-text">Devis envoyé avec succès ! Le PDF sera transmis par Telegram.</span>
+    <span id="msg-success-text">Devis envoyÃ© avec succÃ¨s ! Le PDF sera transmis par Telegram.</span>
   </div>
 
   <div class="msg msg-error" id="msg-error">
     <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
-    <span id="msg-error-text">Une erreur est survenue. Vérifiez votre connexion et réessayez.</span>
+    <span id="msg-error-text">Une erreur est survenue. VÃ©rifiez votre connexion et rÃ©essayez.</span>
   </div>
 
   <!-- ======================== BOUTON PRINCIPAL ======================== -->
   <button class="btn-primary" id="btn-submit" type="button">
     <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-    Générer le devis PDF
+    GÃ©nÃ©rer le devis PDF
   </button>
 
   <button class="btn-secondary" id="btn-nouveau" type="button" style="display:none;">
     <svg viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
-    Créer un nouveau devis
+    CrÃ©er un nouveau devis
   </button>
 
 </main>
 
 <footer>
-  <p>GARAGE DAO — Treichville zone 3 &bull; Système de devis interne</p>
+  <p>GARAGE DAO â€” Treichville zone 3 &bull; SystÃ¨me de devis interne</p>
 </footer>
 
 <!-- ============================================================
      JAVASCRIPT
 ============================================================ -->
 <script>
-  /* ── URL du backend local : le formulaire envoie ici, puis le backend transmet à n8n ── */
+  /* â”€â”€ URL du backend local : le formulaire envoie ici, puis le backend transmet Ã  n8n â”€â”€ */
   const N8N_WEBHOOK_URL = "https://grage-dao-devis.onrender.com/api/devis";
+  const FORM_SECRET = "garage-dao-7Kp92x-QdA-2026";
 
-  /* ── Compteur de lignes ── */
+  /* â”€â”€ Compteur de lignes â”€â”€ */
   let ligneCounter = 0;
 
-  /* ── Formater un montant en FCFA ── */
+  /* â”€â”€ Formater un montant en FCFA â”€â”€ */
   function formatFCFA(n) {
     if (isNaN(n) || n === null) n = 0;
     return new Intl.NumberFormat('fr-FR', { maximumFractionDigits: 0 }).format(n) + " FCFA";
   }
 
-  /* ── Lire un nombre depuis un champ (retourne 0 si invalide) ── */
+  /* â”€â”€ Lire un nombre depuis un champ (retourne 0 si invalide) â”€â”€ */
   function parseNum(val) {
     const n = parseFloat(String(val).replace(/\s/g, '').replace(',', '.'));
     return isNaN(n) ? 0 : n;
   }
 
-  /* ── Recalculer tous les totaux ── */
+  /* â”€â”€ Recalculer tous les totaux â”€â”€ */
   function recalculate() {
     let totalPieces = 0;
     const lignes = document.querySelectorAll('.ligne-card');
@@ -898,7 +899,7 @@
     document.getElementById('r-total').textContent = formatFCFA(net);
   }
 
-  /* ── Ajouter une ligne ── */
+  /* â”€â”€ Ajouter une ligne â”€â”€ */
   function ajouterLigne() {
     ligneCounter++;
     const id = ligneCounter;
@@ -912,11 +913,11 @@
       <div class="ligne-num">Ligne ${id}</div>
       <div class="ligne-grid">
         <div class="field ligne-designation">
-          <label>Désignation <span class="req">*</span></label>
-          <input type="text" class="l-desig" placeholder="Ex : Filtre à huile, vidange…" />
+          <label>DÃ©signation <span class="req">*</span></label>
+          <input type="text" class="l-desig" placeholder="Ex : Filtre Ã  huile, vidangeâ€¦" />
         </div>
         <div class="field">
-          <label>Quantité</label>
+          <label>QuantitÃ©</label>
           <input type="number" class="l-qte" value="1" min="0" step="0.01" />
         </div>
         <div class="field">
@@ -938,7 +939,7 @@
 
     list.appendChild(card);
 
-    /* Écouteurs de recalcul */
+    /* Ã‰couteurs de recalcul */
     card.querySelectorAll('.l-qte, .l-pu').forEach(el => {
       el.addEventListener('input', recalculate);
       el.addEventListener('change', recalculate);
@@ -947,18 +948,18 @@
     recalculate();
   }
 
-  /* ── Supprimer une ligne ── */
+  /* â”€â”€ Supprimer une ligne â”€â”€ */
   function supprimerLigne(btn) {
     const card = btn.closest('.ligne-card');
     card.remove();
-    /* Renuméroter */
+    /* RenumÃ©roter */
     document.querySelectorAll('.ligne-card').forEach((c, i) => {
       c.querySelector('.ligne-num').textContent = 'Ligne ' + (i + 1);
     });
     recalculate();
   }
 
-  /* ── Afficher / cacher un message ── */
+  /* â”€â”€ Afficher / cacher un message â”€â”€ */
   function showMsg(id, show) {
     document.getElementById(id).classList.toggle('show', show);
   }
@@ -967,7 +968,7 @@
     ['msg-sending', 'msg-success', 'msg-error'].forEach(id => showMsg(id, false));
   }
 
-  /* ── Vider le formulaire ── */
+  /* â”€â”€ Vider le formulaire â”€â”€ */
   function viderFormulaire() {
     document.getElementById('client-nom').value   = '';
     document.getElementById('client-email').value = '';
@@ -987,7 +988,7 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  /* ── Envoi du formulaire ── */
+  /* â”€â”€ Envoi du formulaire â”€â”€ */
   async function envoyerDevis() {
     hideAllMsgs();
 
@@ -1047,18 +1048,18 @@
     });
 
     if (hasError) {
-      document.getElementById('msg-error-text').textContent = 'Certaines lignes sont incomplètes. Vérifiez les désignations et les prix.';
+      document.getElementById('msg-error-text').textContent = 'Certaines lignes sont incomplÃ¨tes. VÃ©rifiez les dÃ©signations et les prix.';
       showMsg('msg-error', true);
       return;
     }
 
     if (lignes.length === 0) {
-      document.getElementById('msg-error-text').textContent = 'Ajoutez au moins une ligne valide avec désignation et prix.';
+      document.getElementById('msg-error-text').textContent = 'Ajoutez au moins une ligne valide avec dÃ©signation et prix.';
       showMsg('msg-error', true);
       return;
     }
 
-    /* Main-d’œuvre */
+    /* Main-dâ€™Å“uvre */
     const mainOeuvreEl = document.getElementById('main-oeuvre-val');
     const main_oeuvre  = mainOeuvreEl ? parseNum(mainOeuvreEl.value) : 0;
 
@@ -1080,7 +1081,8 @@
     try {
       const response = await fetch(N8N_WEBHOOK_URL, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json',
+          'X-Form-Key': FORM_SECRET },
         body: JSON.stringify(payload)
       });
 
@@ -1090,33 +1092,33 @@
         const result = await response.json().catch(() => ({}));
         showMsg('msg-success', true);
         document.getElementById('msg-success-text').textContent =
-          result.message || 'Devis généré et transmis au garage pour validation.';
+          result.message || 'Devis gÃ©nÃ©rÃ© et transmis au garage pour validation.';
         btn.style.display = 'none';
         document.getElementById('btn-nouveau').style.display = 'flex';
       } else {
         const errTxt = await response.text().catch(() => '');
         document.getElementById('msg-error-text').textContent =
-          `Erreur serveur (${response.status}). ${errTxt ? errTxt.substring(0, 120) : 'Réessayez.'}`;
+          `Erreur serveur (${response.status}). ${errTxt ? errTxt.substring(0, 120) : 'RÃ©essayez.'}`;
         showMsg('msg-error', true);
         btn.disabled = false;
       }
     } catch (err) {
       showMsg('msg-sending', false);
       document.getElementById('msg-error-text').textContent =
-        'Impossible de joindre le serveur. Vérifiez votre connexion internet.';
+        'Impossible de joindre le serveur. VÃ©rifiez votre connexion internet.';
       showMsg('msg-error', true);
       btn.disabled = false;
     }
   }
 
-  /* ── Nettoyer les erreurs visuelles sur focus ── */
+  /* â”€â”€ Nettoyer les erreurs visuelles sur focus â”€â”€ */
   document.addEventListener('focusin', e => {
     if (e.target.matches('input, select, textarea')) {
       e.target.classList.remove('error');
     }
   });
 
-  /* ── Écouteurs ── */
+  /* â”€â”€ Ã‰couteurs â”€â”€ */
   document.getElementById('btn-add-ligne').addEventListener('click', ajouterLigne);
   document.getElementById('btn-submit').addEventListener('click', envoyerDevis);
   document.getElementById('btn-nouveau').addEventListener('click', viderFormulaire);
@@ -1125,7 +1127,7 @@
     if (el) el.addEventListener('input', recalculate);
   });
 
-  /* ── Initialisation : une ligne par défaut ── */
+  /* â”€â”€ Initialisation : une ligne par dÃ©faut â”€â”€ */
   ajouterLigne();
 </script>
 
