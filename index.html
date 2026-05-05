@@ -685,6 +685,29 @@
     </div>
   </div>
 
+
+  <!-- ======================== SECTION 0 : ACCÈS ======================== -->
+  <div class="section">
+    <div class="section-header">
+      <h2>🔐 ACCÈS GARAGE</h2>
+      <p>Entrez le code d’accès avant de générer le devis.</p>
+    </div>
+
+    <div class="grid-1">
+      <div class="field">
+        <label for="access_code">Code d’accès garage *</label>
+        <input
+          type="password"
+          id="access_code"
+          name="access_code"
+          placeholder="Ex : DAO2026"
+          autocomplete="off"
+          required
+        />
+      </div>
+    </div>
+  </div>
+
   <!-- ======================== SECTION 1 : CLIENT ======================== -->
   <div class="section-card">
     <div class="section-header">
@@ -1069,6 +1092,7 @@
       objet,
       lignes,
       main_oeuvre,
+      access_code: document.getElementById("access_code").value.trim(),
       source: "formulaire_web"
     };
 
@@ -1132,3 +1156,4 @@
 
 </body>
 </html>
+
