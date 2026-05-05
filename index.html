@@ -638,7 +638,46 @@
       .field-group.client-row { grid-template-columns: 1fr 1fr; }
       .field.span-3 { grid-column: span 2; }
     }
-  </style>
+  
+.password-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrap input {
+  width: 100%;
+  padding-right: 56px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 10px;
+  background: #f1f5f9;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.password-toggle:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.password-toggle svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+</style>
 </head>
 <body>
 
@@ -696,14 +735,21 @@
     <div class="grid-1">
       <div class="field">
         <label for="access_code">Code d’accès garage *</label>
-        <input
-          type="password"
-          id="access_code"
-          name="access_code"
-          placeholder="Ex : DAO2026"
-          autocomplete="off"
-          required
-        />
+        <div class="password-wrap">
+          <input
+            type="password"
+            id="access_code"
+            name="access_code"
+            placeholder="Code fourni au garage"
+            autocomplete="off"
+            required
+          />
+          <button type="button" class="password-toggle" id="toggleAccessCode" aria-label="Afficher le code">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zm0 12.5a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -836,7 +882,7 @@
       </div>
       <hr class="resume-sep" />
       <div class="resume-total">
-        <span class="t-label">Net Ã  payer</span>
+        <span class="t-label">NET À PAYER</span>
         <span class="t-amount" id="r-total">0 FCFA</span>
       </div>
     </div>
@@ -879,7 +925,7 @@
      JAVASCRIPT
 ============================================================ -->
 <script>
-  /* ── URL du backend local : le formulaire envoie ici, puis le backend transmet Ã  n8n ── */
+  /* ── URL du backend local : le formulaire envoie ici, puis le backend transmet à n8n ── */
   const N8N_WEBHOOK_URL = "https://grage-dao-devis.onrender.com/api/devis";
   const FORM_SECRET = "garage-dao-7Kp92x-QdA-2026";
 
@@ -936,7 +982,7 @@
       <div class="ligne-grid">
         <div class="field ligne-designation">
           <label>Désignation <span class="req">*</span></label>
-          <input type="text" class="l-desig" placeholder="Ex : Filtre Ã  huile, vidange…" />
+          <input type="text" class="l-desig" placeholder="Ex : Filtre à huile, vidange…" />
         </div>
         <div class="field">
           <label>Quantité</label>
@@ -1152,6 +1198,17 @@
 
   /* ── Initialisation : une ligne par défaut ── */
   ajouterLigne();
+
+  const toggleAccessCodeButton = document.getElementById("toggleAccessCode");
+  const accessCodeInput = document.getElementById("access_code");
+
+  if (toggleAccessCodeButton && accessCodeInput) {
+    toggleAccessCodeButton.addEventListener("click", () => {
+      const isHidden = accessCodeInput.type === "password";
+      accessCodeInput.type = isHidden ? "text" : "password";
+      toggleAccessCodeButton.setAttribute("aria-label", isHidden ? "Masquer le code" : "Afficher le code");
+    });
+  }
 </script>
 
 </body>
